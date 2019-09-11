@@ -28,7 +28,7 @@ public class JunitTests {
 	driver.close();
 	}
 	
-/*	@Test
+	@Test
 	public void testCase1() {
 		
 	WebElement titlemsg = driver.findElement(By.cssSelector("h2.click-before-outline"));
@@ -36,7 +36,7 @@ public class JunitTests {
 					System.out.println(actualTitle);
 	assertEquals("Subscribe to My McD’s®", actualTitle);
 		
-		}*/
+		}
 	
 	
 
@@ -46,21 +46,26 @@ public class JunitTests {
 		WebElement  firstName = driver.findElement(By.id("firstname2"));
 		 firstName.sendKeys("Jasvir");
 		 String actualFirstName =firstName.getText();
-		
+			System.out.println(actualFirstName);
+
 			
 		WebElement  email = driver.findElement(By.id("email2"));
 		email.sendKeys("jasvir.kaur@gmail.com");
 		String actualemail = email.getText();
+		System.out.println(actualemail);
+
 		
 		WebElement  postalCode = driver.findElement(By.id("postalcode2"));
 		postalCode.sendKeys("L6R");
 		String actualCode = postalCode.getText();
+		System.out.println(actualCode);
+
 		
 		 
 		assertEquals("Jasvir",actualFirstName);
 		 assertEquals("jasvir.kaur@gmail.com",actualemail );
 
-		assertEquals("L6R",actualCode );
+		assertEquals("L6R",actualCode);
 		
 		
 		WebElement subscribeButton = driver.findElement(By.id("g-recaptcha-btn-2"));
@@ -76,19 +81,21 @@ public class JunitTests {
 		
 		WebElement  firstName = driver.findElement(By.id("firstname2"));
 		 String actualFirstName = null;
-		 assertEquals("Jasvir" , actualFirstName );
 			
 		WebElement  email = driver.findElement(By.id("email2"));
 		String actualemail = null;
-		 assertEquals("jasvir.kaur@gmail.com" , actualemail );
 
 		WebElement  postalCode = driver.findElement(By.id("postalcode2"));
 		String actualCode = null;
+
+		 assertEquals("Jasvir" , actualFirstName );
+		 assertEquals("jasvir.kaur@gmail.com" , actualemail );
 		 assertEquals("L6R" , actualCode );
 
-		
-		WebElement subscribeButton = driver.findElement(By.id("g-recaptcha-btn-2"));
+         WebElement subscribeButton = driver.findElement(By.id("g-recaptcha-btn-2"));
 		subscribeButton.click();
+		
+		
 		}*/
 	
 	
